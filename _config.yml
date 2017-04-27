@@ -1,1 +1,55 @@
-theme: jekyll-theme-dinky
+theme: autm-rb-master
+
+baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
+url: "hasinisilva.github.io" # the base hostname & protocol for your site.
+
+paginate: 6 #articles per page
+paginate_path: /blog/page:num #makes pagination working
+
+# header text
+title: Your awesome site name :)
+header: Write something about you here...
+
+# for welcome page
+# to replace image go to index.html
+email:
+  address: "hashinsilva@gmail.com"
+  text: "hasini (at) gmail.com"
+
+# disqus comment
+disqus:
+    shortname: "hasini" #your disqus comment short name
+
+# google analytics
+google:
+    tracking-id: "" #your tracking id here
+
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+# This is used by feed.xml. Uncomment if you want to use it.
+# description: "..."
+
+exclude:
+  - "README.md"
+  - "CHANGELOG.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+
+permalink: /posts/:title
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
